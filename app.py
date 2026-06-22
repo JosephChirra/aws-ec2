@@ -5,7 +5,7 @@ app = FastAPI(title="Sample AWS EC2 FastAPI App")
 
 @app.get("/")
 def read_root():
-    return {"message": "Hello from FastAPI on AWS EC2!"}
+    return {"message": "Hello from FastAPI on AWS EC2! this is Version 2"}
 
 @app.get("/health")
 def health_check():
