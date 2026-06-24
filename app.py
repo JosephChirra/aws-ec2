@@ -5,6 +5,10 @@ app = FastAPI()
 
 engine = create_engine("postgresql://postgres:Danielchirra343@joseph-postgres-db.czu2scqkekna.ap-south-2.rds.amazonaws.com:5432/fastapi_db")
 
+@app.get("/")
+def root():
+    return {"message": "Hello World This is from EC2 Instance"}
+
 @app.get("/users")
 def get_users():
 
